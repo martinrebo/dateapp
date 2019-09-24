@@ -1,0 +1,1 @@
+steps:- name: 'gcr.io/cloud-builders/npm'  args: ['install']- name: 'gcr.io/cloud-builders/npm'  args: ['test']- name: 'gcr.io/cloud-builders/gcloud' args: - beta - functions - deploy - dateapp- -- source=. - -- runtime=nodejs8 - -- trigger-http
